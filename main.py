@@ -4,7 +4,7 @@ from recipes.recipe_book import cold_dish, hun, shu, soups
 from shopping_list import ShoppingList
 
 if __name__ == '__main__':
-    random.seed(1116)
+    random.seed(1222)
     recipes = random.sample(cold_dish(), 1) + random.sample(hun(), 2) + random.sample(shu(), 2) + random.sample(soups(), 1)
 
     print('selected recipes:')

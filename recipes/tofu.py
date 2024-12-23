@@ -11,11 +11,25 @@ def sour_and_hot_silken_tofu():
         IngredientPouch(Ingredients.CHICKEN_STOCK, 2, Units.TBSP),
         IngredientPouch(Ingredients.CHILLI_OIL, 3, Units.TSP),
         IngredientPouch(Ingredients.SESAME_OIL, 1, Units.TSP),
-        IngredientPouch(Ingredients.SPRING_ONION, 2, Units.TBSP),
+        IngredientPouch(Ingredients.SPRING_ONIONS, 2, Units.TBSP),
         IngredientPouch(Ingredients.GARLIC, 0.5, Units.TSP),
         IngredientPouch(Ingredients.SICHUAN_PRESERVED_VEGETABLE, 2, Units.TBSP),
         IngredientPouch(Ingredients.BOMBAY_MIX)
     ]
 
-    recipe = Recipe('sour and hot silken tofu', ingredients, 1)
-    return recipe
+    return Recipe('sour and hot silken tofu', ingredients, 1)
+
+
+def silken_tofu_with_pickled_mustard_greens():
+    ingredients = [
+        IngredientPouch(Ingredients.PICKLED_MUSTARD_GREENS, 1, Units.OZ),
+        IngredientPouch(Ingredients.COOKING_OIL, 1.5, Units.TBSP),
+        IngredientPouch(Ingredients.CHICKEN_STOCK, 1 + 2.0/16, Units.CUP),
+        IngredientPouch(Ingredients.SALT),
+        IngredientPouch(Ingredients.WHITE_PEPPER),
+        IngredientPouch(Ingredients.SILKEN_TOFU, 11, Units.OZ),
+        IngredientPouch(Ingredients.POTATO_FLOUR, 1.5, Units.TSP),
+        IngredientPouch(Ingredients.SPRING_ONIONS, 2, Units.TBSP)
+    ]
+
+    return Recipe('silken tofu with pickled mustard greens', ingredients, 1)
