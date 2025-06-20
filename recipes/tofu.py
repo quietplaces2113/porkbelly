@@ -1,35 +1,29 @@
-from ingredients import IngredientPouch, Ingredients, Units
+from ingredients import Pouch, Ingredients, Units
 from recipe import Recipe
 
 
-def sour_and_hot_silken_tofu():
+def firm_tofu_with_green_bell_peppers():
     ingredients = [
-        IngredientPouch(Ingredients.SALT),
-        IngredientPouch(Ingredients.SILKEN_TOFU, 11, Units.OZ),
-        IngredientPouch(Ingredients.CHINKIANG_VINEGAR, 1, Units.TBSP),
-        IngredientPouch(Ingredients.LIGHT_SOY_SAUCE, 2, Units.TSP),
-        IngredientPouch(Ingredients.CHICKEN_STOCK, 2, Units.TBSP),
-        IngredientPouch(Ingredients.CHILLI_OIL, 3, Units.TSP),
-        IngredientPouch(Ingredients.SESAME_OIL, 1, Units.TSP),
-        IngredientPouch(Ingredients.SPRING_ONIONS, 2, Units.TBSP),
-        IngredientPouch(Ingredients.GARLIC, 0.5, Units.TSP),
-        IngredientPouch(Ingredients.SICHUAN_PRESERVED_VEGETABLE, 2, Units.TBSP),
-        IngredientPouch(Ingredients.BOMBAY_MIX)
+        Pouch(Ingredients.FIRM_TOFU, 4.25, Units.OZ),
+        Pouch(Ingredients.GREEN_BELL_PEPPERS, 1, Units.CNT),
+        Pouch(Ingredients.COOKING_OIL, 2, Units.TBSP),
+        Pouch(Ingredients.LIGHT_SOY_SAUCE),
+        Pouch(Ingredients.SALT)
     ]
 
-    return Recipe('sour and hot silken tofu', ingredients, 1)
+    return Recipe('firm tofu with green bell peppers', ingredients, 1)
 
 
 def silken_tofu_with_pickled_mustard_greens():
     ingredients = [
-        IngredientPouch(Ingredients.PICKLED_MUSTARD_GREENS, 1, Units.OZ),
-        IngredientPouch(Ingredients.COOKING_OIL, 1.5, Units.TBSP),
-        IngredientPouch(Ingredients.CHICKEN_STOCK, 1 + 2.0/16, Units.CUP),
-        IngredientPouch(Ingredients.SALT),
-        IngredientPouch(Ingredients.WHITE_PEPPER),
-        IngredientPouch(Ingredients.SILKEN_TOFU, 11, Units.OZ),
-        IngredientPouch(Ingredients.POTATO_FLOUR, 1.5, Units.TSP),
-        IngredientPouch(Ingredients.SPRING_ONIONS, 2, Units.TBSP)
+        Pouch(Ingredients.PICKLED_MUSTARD_GREENS, 1, Units.OZ),
+        Pouch(Ingredients.COOKING_OIL, 1.5, Units.TBSP),
+        Pouch(Ingredients.CHICKEN_STOCK, 1 + 2.0 / 16, Units.CUP),
+        Pouch(Ingredients.SALT),
+        Pouch(Ingredients.WHITE_PEPPER),
+        Pouch(Ingredients.SILKEN_TOFU, 11, Units.OZ),
+        Pouch(Ingredients.POTATO_FLOUR, 1.5, Units.TSP),
+        Pouch(Ingredients.SPRING_ONIONS, 2, Units.TBSP)
     ]
 
     return Recipe('silken tofu with pickled mustard greens', ingredients, 1)

@@ -1,6 +1,6 @@
 from collections import defaultdict
 
-from ingredients import IngredientPouch
+from ingredients import Pouch
 from recipe import Recipe
 
 
@@ -19,7 +19,7 @@ class ShoppingList:
 
         for ingredient, v in self.ingredients.items():
             for unit, amount in v.items():
-                ingredients_by_aisle[ingredient.value.aisle].append(IngredientPouch(ingredient, amount, unit))
+                ingredients_by_aisle[ingredient.value.aisle].append(Pouch(ingredient, amount, unit))
 
         for aisle, ingredients in ingredients_by_aisle.items():
             print('\n{}\n'.format(aisle))

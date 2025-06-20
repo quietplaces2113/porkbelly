@@ -1,39 +1,17 @@
-from ingredients import Ingredients, IngredientPouch
+from ingredients import Ingredients, Pouch
 from recipe import Recipe
 from units import Units
 
 
-def clams_in_black_bean_sauce():
+def steamed_sea_bass_with_ginger_and_spring_onion():
     ingredients = [
-        IngredientPouch(Ingredients.CLAMS, 35, Units.OZ),
-        IngredientPouch(Ingredients.COOKING_OIL, 3, Units.TBSP),
-        IngredientPouch(Ingredients.FERMENTED_BLACK_BEANS, 2.5, Units.TBSP),
-        IngredientPouch(Ingredients.GINGER, 2, Units.TSP),
-        IngredientPouch(Ingredients.GARLIC, 1, Units.TBSP),
-        IngredientPouch(Ingredients.RED_CHILLI_PEPPERS, 1.5, Units.CNT),
-        IngredientPouch(Ingredients.GREEN_BELL_PEPPERS, 3, Units.TBSP),
-        IngredientPouch(Ingredients.SHAOXING_WINE, 2, Units.TBSP),
-        IngredientPouch(Ingredients.DARK_SOY_SAUCE, 1, Units.TSP),
-        IngredientPouch(Ingredients.LIGHT_SOY_SAUCE, 1, Units.TSP),
-        IngredientPouch(Ingredients.SALT),
-        IngredientPouch(Ingredients.POTATO_FLOUR, 1, Units.TSP),
-        IngredientPouch(Ingredients.SPRING_ONIONS, 2, Units.TBSP),
+        Pouch(Ingredients.SPRING_ONIONS, 5, Units.CNT),
+        Pouch(Ingredients.GINGER, 2, Units.OZ),
+        Pouch(Ingredients.SEA_BASS, 1.5, Units.LB),
+        Pouch(Ingredients.SALT),
+        Pouch(Ingredients.SHAOXING_WINE, 1, Units.TBSP),
+        Pouch(Ingredients.LIGHT_SOY_SAUCE, 3, Units.TBSP),
+        Pouch(Ingredients.COOKING_OIL, 4, Units.TBSP)
     ]
 
-    return Recipe('clams in black bean sauce', ingredients, 1)
-
-
-def salt_and_pepper_squid():
-    ingredients = [
-        IngredientPouch(Ingredients.SQUID, 2, Units.CNT),
-        IngredientPouch(Ingredients.SHAOXING_WINE, 1, Units.TBSP),
-        IngredientPouch(Ingredients.POTATO_FLOUR, 3, Units.TBSP),
-        IngredientPouch(Ingredients.COOKING_OIL, 1 + 10.0/16, Units.CUP),
-        IngredientPouch(Ingredients.GARLIC, 2, Units.TBSP),
-        IngredientPouch(Ingredients.SPRING_ONIONS, 4, Units.TBSP),
-        IngredientPouch(Ingredients.RED_CHILLI_PEPPERS, 2, Units.TBSP),
-        IngredientPouch(Ingredients.SICHUAN_PEPPER, 0.25, Units.TSP),
-        IngredientPouch(Ingredients.SALT, 0.75, Units.TSP),
-    ]
-
-    return Recipe('salt and pepper squid', ingredients, 1)
+    return Recipe('steamed sea bass with ginger and spring onion', ingredients, 1)

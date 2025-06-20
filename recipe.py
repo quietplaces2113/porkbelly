@@ -1,10 +1,10 @@
 from dataclasses import dataclass
 
-from ingredients import IngredientPouch
+from ingredients import Pouch
 
 
 @dataclass
 class Recipe:
     recipe_name: str
-    ingredients: list[IngredientPouch]
+    ingredients: list[Pouch]
     servings: int

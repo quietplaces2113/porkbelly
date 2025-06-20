@@ -1,27 +1,15 @@
-from ingredients import IngredientPouch, Ingredients, Units
+from ingredients import Pouch, Ingredients, Units
 from recipe import Recipe
 
 
-def potato_sliver_bing():
+def stir_fried_potato_slivers_with_chilli_and_sichuan_pepper():
     ingredients = [
-        IngredientPouch(Ingredients.POTATOES, 9, Units.OZ),
-        IngredientPouch(Ingredients.SPRING_ONIONS, 3, Units.TBSP),
-        IngredientPouch(Ingredients.SALT),
-        IngredientPouch(Ingredients.COOKING_OIL, 3, Units.TBSP),
-        IngredientPouch(Ingredients.SICHUAN_PEPPER, 0.25, Units.TSP)
+        Pouch(Ingredients.DRIED_CHILLIES, 4, Units.CNT),
+        Pouch(Ingredients.POTATOES, 14, Units.OZ),
+        Pouch(Ingredients.SALT),
+        Pouch(Ingredients.COOKING_OIL, 2, Units.TBSP),
+        Pouch(Ingredients.SICHUAN_PEPPERS, .5, Units.TSP),
+        Pouch(Ingredients.SESAME_OIL, .5, Units.TSP)
     ]
 
-    return Recipe('potato and sliver bing', ingredients, 1)
-
-
-def stir_fried_mashed_potato_with_preserved_mustard_greens():
-    ingredients = [
-        IngredientPouch(Ingredients.POTATOES, 12, Units.OZ),
-        IngredientPouch(Ingredients.SNOW_VEGETABLE, 2.5, Units.OZ),
-        IngredientPouch(Ingredients.COOKING_OIL, 3, Units.TBSP),
-        IngredientPouch(Ingredients.SALT),
-        IngredientPouch(Ingredients.WHITE_PEPPER),
-        IngredientPouch(Ingredients.SPRING_ONIONS)
-    ]
-
-    return Recipe('stir fried mashed potato with preserved mustard greens', ingredients, 1)
+    return Recipe('stir fried potato slivers with chilli and sichuan pepper', ingredients, 1)

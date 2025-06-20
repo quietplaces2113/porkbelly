@@ -1,30 +1,44 @@
-from ingredients import IngredientPouch, Ingredients, Units
+from ingredients import Pouch, Ingredients, Units
 from recipe import Recipe
 
 
-def stir_fried_celery_with_lily_bulbs_and_macadamia_nuts():
+def blanched_choy_sum_with_sizzling_oil():
     ingredients = [
-        IngredientPouch(Ingredients.CELERY_STICKS, 2, Units.CNT),
-        IngredientPouch(Ingredients.LILY_BULBS, 4, Units.OZ),
-        IngredientPouch(Ingredients.MACADAMIA_NUTS, 2, Units.OZ),
-        IngredientPouch(Ingredients.SUGAR, 0.125, Units.TSP),
-        IngredientPouch(Ingredients.SALT),
-        IngredientPouch(Ingredients.COOKING_OIL, 1.5, Units.TBSP),
-        IngredientPouch(Ingredients.GARLIC)
+        Pouch(Ingredients.CHOY_SUM, 11, Units.OZ),
+        Pouch(Ingredients.SPRING_ONIONS, 2, Units.CNT),
+        Pouch(Ingredients.GINGER, .5, Units.OZ),
+        Pouch(Ingredients.RED_BELL_PEPPERS),
+        Pouch(Ingredients.SALT, 1, Units.TSP),
+        Pouch(Ingredients.COOKING_OIL, 4, Units.TBSP),
+        Pouch(Ingredients.LIGHT_SOY_SAUCE, 2, Units.TBSP)
     ]
 
-    return Recipe('stir fried celery with lily bulbs and macadamia nuts', ingredients, 1)
+    return Recipe('blanched choy sum with sizzling oil', ingredients, 1)
 
 
-def chopped_celery_with_ground_beef():
+def spinach_with_chilli_and_fermented_tofu():
     ingredients = [
-        IngredientPouch(Ingredients.CELERY_STICKS, 11, Units.OZ),
-        IngredientPouch(Ingredients.COOKING_OIL, 3, Units.TBSP),
-        IngredientPouch(Ingredients.GROUND_BEEF, 4, Units.OZ),
-        IngredientPouch(Ingredients.SICHUAN_CHILLI_BEAN_PASTE, 1.5, Units.TBSP),
-        IngredientPouch(Ingredients.GINGER, 1.5, Units.TBSP),
-        IngredientPouch(Ingredients.LIGHT_SOY_SAUCE),
-        IngredientPouch(Ingredients.CHINKIANG_VINEGAR, 1, Units.TSP)
+        Pouch(Ingredients.WATER_SPINACH, 11.5, Units.OZ),
+        Pouch(Ingredients.RED_CHILLI_PEPPERS, .5, Units.CNT),
+        Pouch(Ingredients.WHITE_FERMENTED_TOFU),
+        Pouch(Ingredients.SUGAR, .25, Units.TSP),
+        Pouch(Ingredients.COOKING_OIL, 3, Units.TBSP),
+        Pouch(Ingredients.GARLIC, 2, Units.TSP),
+        Pouch(Ingredients.SALT)
     ]
 
-    return Recipe('chopped celery with ground beef', ingredients, 1)
+    return Recipe('spinach with chilli and fermented tofu', ingredients, 1)
+
+
+def chinese_broccoli_in_ginger_sauce():
+    ingredients = [
+        Pouch(Ingredients.CHINESE_BROCCOLI, .75, Units.LB),
+        Pouch(Ingredients.SALT),
+        Pouch(Ingredients.COOKING_OIL, 4, Units.TBSP),
+        Pouch(Ingredients.GINGER, 2, Units.TBSP),
+        Pouch(Ingredients.SHAOXING_WINE, 1, Units.TBSP),
+        Pouch(Ingredients.SUGAR, .5, Units.TSP),
+        Pouch(Ingredients.POTATO_FLOUR, 1, Units.TSP)
+    ]
+
+    return Recipe('chinese broccoli in ginger sauce', ingredients, 1)
