@@ -1,13 +1,14 @@
 import random
 
-from recipes.recipe_book import hun, shu, soups
+from chinese.meat import red_braised_pork
+from chinese.chinese import hun, shu, soups
 from shopping_list import ShoppingList
 
 if __name__ == '__main__':
     random.seed(0000)
-    recipes = random.sample(hun(), 3) + random.sample(shu(), 3) + random.sample(soups(), 1)
+    recipes = red_braised_pork()
 
-    print('selected recipes:')
+    print('selected chinese:')
     for recipe in recipes:
         print(recipe.recipe_name)
 

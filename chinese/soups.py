@@ -6,7 +6,7 @@ def soup_of_salted_duck_eggs():
     ingredients = [
         Pouch(Ingredients.PORK_TENDERLOIN, 5, Units.OZ),
         Pouch(Ingredients.SALTED_DUCK_EGGS, 2, Units.CNT),
-        Pouch(Ingredients.PRESERVED_MUSTARD_GREENS, 11, Units.OZ),
+        Pouch(Ingredients.MUSTARD_GREENS, 11, Units.OZ),
         Pouch(Ingredients.GINGER, .5, Units.OZ),
         Pouch(Ingredients.CHICKEN_STOCK, 6.33, Units.CUP),
         Pouch(Ingredients.COOKING_OIL, 3, Units.TBSP),
