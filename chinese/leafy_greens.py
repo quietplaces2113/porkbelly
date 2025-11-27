@@ -42,3 +42,17 @@ def chinese_broccoli_in_ginger_sauce():
     ]
 
     return Recipe('chinese broccoli in ginger sauce', ingredients, 1)
+
+
+# +1
+def pea_shoots():
+    ingredients = [
+        Pouch(Ingredients.PEA_SHOOTS),
+        Pouch(Ingredients.COOKING_OIL),
+        Pouch(Ingredients.GINGER),
+        Pouch(Ingredients.GARLIC),
+        Pouch(Ingredients.SHAOXING_WINE),
+        Pouch(Ingredients.SALT)
+    ]
+
+    return Recipe('pea shoots', ingredients, 1)
