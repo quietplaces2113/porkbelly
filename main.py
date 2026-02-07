@@ -1,15 +1,15 @@
 import random
 
-from chinese.leafy_greens import chinese_broccoli_in_ginger_sauce
-from chinese.meat import slow_cooked_ribs_with_red_fermented_tofu
-from italian.meat import oven_roasted_chicken_with_garlic_and_rosemary
+from british.meat import shepherds_pie
+from chinese.fish_and_seafood import steamed_sea_bass_with_ginger_and_spring_onion
+from chinese.leafy_greens import pea_shoots
 from shopping_list import ShoppingList
 
 if __name__ == '__main__':
     random.seed(0000)
-    recipes = [chinese_broccoli_in_ginger_sauce(), slow_cooked_ribs_with_red_fermented_tofu(), oven_roasted_chicken_with_garlic_and_rosemary()]
+    recipes = [pea_shoots(), steamed_sea_bass_with_ginger_and_spring_onion(), shepherds_pie()]
 
-    print('selected chinese:')
+    print('selected recipes:')
     for recipe in recipes:
         print(recipe.recipe_name)
 
